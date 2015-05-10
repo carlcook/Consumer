@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-  cout << "Hello World!" << endl;
+  // TODO write sample program to read (to verify)
   return 0;
 }
 
