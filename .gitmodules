@@ -1,3 +1,4 @@
 [submodule "x_messages"]
 	path = x_messages
 	url = git@github.com:carlcook/Messages.git
+	branch = master
