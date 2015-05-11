@@ -12,8 +12,9 @@ int main()
   // TODO handle journalling (i.e. per thread)
 
   auto timestamp = 0L; // todo read from file
-  std::unique_ptr<IMessage> message = CreateMessage(0);
-  char* buffer = 0;
+  auto messageId = 0;
+  std::unique_ptr<IMessage> message = CreateMessage(messageId);
+  const char* buffer = 0;
   message->Deserialise(buffer);
   auto logline = message->GenerateLogMessage();
   std::cout << logline << std::endl;
